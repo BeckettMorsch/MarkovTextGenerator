@@ -1,0 +1,6 @@
+C:\Users\eahscs\Documents\GitHub\MarkovTextGenerator\MarkovTextGenerator\bin\Debug\MarkovTextGenerator.exe.config
+C:\Users\eahscs\Documents\GitHub\MarkovTextGenerator\MarkovTextGenerator\bin\Debug\MarkovTextGenerator.exe
+C:\Users\eahscs\Documents\GitHub\MarkovTextGenerator\MarkovTextGenerator\bin\Debug\MarkovTextGenerator.pdb
+C:\Users\eahscs\Documents\GitHub\MarkovTextGenerator\MarkovTextGenerator\obj\Debug\MarkovTextGenerator.csprojResolveAssemblyReference.cache
+C:\Users\eahscs\Documents\GitHub\MarkovTextGenerator\MarkovTextGenerator\obj\Debug\MarkovTextGenerator.exe
+C:\Users\eahscs\Documents\GitHub\MarkovTextGenerator\MarkovTextGenerator\obj\Debug\MarkovTextGenerator.pdb
