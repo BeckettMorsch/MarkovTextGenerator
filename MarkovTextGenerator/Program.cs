@@ -35,7 +35,7 @@ namespace MarkovTextGenerator
             Console.WriteLine("Done learning!  Now give me a word and I'll tell you what comes next.");
             Console.Write("> ");
 
-            String word = Console.ReadLine();
+            String word = chain.GetRandomStartingWord();
             String nextWord = chain.GetNextWord(word);
      
             Console.WriteLine("I predict the next word will be " + nextWord);
