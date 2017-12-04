@@ -89,7 +89,7 @@ namespace MarkovTextGenerator
             {
                 double choice = rand.NextDouble();
 
-                Console.WriteLine("I picked the number " + choice);
+                //Console.WriteLine("I picked the number " + choice);
 
                 List<Word> poss = words[word];
 
