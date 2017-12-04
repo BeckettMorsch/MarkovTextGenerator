@@ -46,6 +46,7 @@ namespace MarkovTextGenerator
                 nextWord = chain.GetNextWord(nextWord);
                 //nextWord = newWord;
                 Console.WriteLine(nextWord);
+                //dd
             }
         }
     }
