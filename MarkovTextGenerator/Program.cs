@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.IO;
 
 namespace MarkovTextGenerator
 {
@@ -16,17 +17,15 @@ namespace MarkovTextGenerator
 
             Console.WriteLine("Enter some text I can learn from (enter single ! to finish): ");
 
-            while (true)
+            const Int32 BufferSize = 128;
+            using (var fileStream = File.OpenRead(@"C:\Users\eahscs\Desktop\Text.txt"))
+            using (var streamReader = new StreamReader(fileStream, Encoding.UTF8, true, BufferSize))
             {
-
-                Console.Write("> ");
-
-                String line = Console.ReadLine();
-                if (line == "!")
-                    break;
-
-                chain.AddString(line);  // Let the chain process this string
-            }
+                String line;
+                while ((line = streamReader.ReadLine()) != null)
+                    // Process line
+                    chain.AddString(line);
+  }
 
             // Now let's update all the probabilities with the new data
             chain.UpdateProbabilities();
@@ -37,7 +36,7 @@ namespace MarkovTextGenerator
 
             String word = chain.GetRandomStartingWord();
             String nextWord = chain.GetNextWord(word);
-     
+            Console.WriteLine("Starting Word: " + word);
             Console.WriteLine("I predict the next word will be " + nextWord);
 
             while (nextWord != "")
